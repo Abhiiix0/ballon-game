@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#start-display{
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/Symbol\ 3\ copy.png");
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+}
+.start-screen{
+    background-color:skyblue;
+    width: 200px;
+    height: 20vh;
+    border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.start-screen button{
+    width: 150px;
+    height: 40px;
+    font-size: larger;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 2px white;
+    text-transform: uppercase;
+    color:rgb(40, 39, 39);
+}
+.start-screen button:hover{
+   opacity: 80%;
+}
+.start-screen p{
+    font-size: larger;
+    margin-top: 10px;
+}
+.score-board{
+    background-color: rgb(78, 44, 245);
+    padding: 10px;
+    width: fit-content;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+
+}
+#back-btn{
+    margin: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#back-btn button{
+  cursor: pointer;
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(100% 0, 0 52%, 100% 100%);
+    background-color: aliceblue;
+}
+.game-container {
+    display: none;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("./assets/Symbol\ 3\ copy.png");
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+  }
+  #pipe{
+    z-index: 5;
+    position: absolute;
+    bottom: -80px;
+    right: 60px; /* Position pump on the right side */
+    width: 300px;
+    height: 300px;
+    /* background-color: gray; */
+    background: url("./assets/Symbol\ 320002.png");
+    background-size: 210px;
+    background-repeat: no-repeat;
+  }
+  #pump {
+    z-index: 10;
+    position: absolute;
+    bottom: -90px;
+    right: -60px; /* Position pump on the right side */
+    width: 300px;
+    height: 300px;
+    /* background-color: gray; */
+    background: url("./assets/Symbol\ 320003.png");
+    background-size: 230px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  #handel{
+    z-index: 0;
+    position: absolute;
+    bottom: 40px;
+    right: -70px; /* Position pump on the right side */
+    width: 300px;
+    height: 300px;
+    /* background-color: gray; */
+    background: url("./assets/Symbol\ 320001.png");
+    background-size: 210px;
+    background-repeat: no-repeat;
+  }
+.pump-up-down{
+  bottom: 0px !important;
+  /* animation: updown 0.1 ease-in-out; */
+}
+/* @keyframes updown {
+  0%{
+    bottom: -90px;
+  }
+  50%{
+    bottom: -120px;
+  }
+  100%{
+    bottom: -90px;
+  }
+} */
+  .thread{
+    background: url('./assets/Symbol\ 100011.png');
+    width: 300px;
+    height: 300px;
+    background-size: 100px;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+  }
+  .balloon {
+
+    z-index: 1;
+    position: absolute;
+    bottom: 140px;
+    right: 280px; /* Start the balloon near the pump */
+    width: 50px;
+    height: 70px;
+/* border: 2px solid black; */
+    /* background: url("./assets/Symbol\ 100010.png"); */
+    background-size: 250px;
+    background-repeat: no-repeat;
+background-size: contain;
+/* border-radius: 50%; */
+    transition: width 0.1s, height 0.1s, transform 0.1s;
+    cursor: pointer;
+  }
+  .alpha{
+    background-blend-mode: difference;
+    position: absolute;
+    display: none;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    width: 65px;
+    height: 65px;
+    /* border: 2px solid black; */
+
+     /* background: url("./assets/Symbol\ 10010.png"); */
+     background-size: 250px;
+     background-repeat: no-repeat;
+ background-size: contain;
+  }
